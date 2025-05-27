@@ -32,14 +32,12 @@ public class FooterTest {
 
         assertNotNull ("Footer найден", footer);
 
-        /*  WebElement logo = driver.findElement(By.cssSelector(".footer-logo"));
-        Assert.assertTrue("Логотип в футере найден",logo.isDisplayed());
+        WebElement classElement = driver.findElement(By.className("Footer_root___6Q28"));
+        assertNotNull("Класс футер найден", classElement.isDisplayed());
 
-        WebElement contact = driver.findElement(By.cssSelector(".footer-contacts"));
-        Assert.assertTrue("Контакты в футере найдены", contact.isDisplayed()); 
+        WebElement classTag = driver.findElement(By.tagName("footer"));
+        assertNotNull("Тег футер найден", classElement.isDisplayed());
 
-        WebElement classElement = driver.findElement(By.className("footer"));
-        assertNotNull("Класс футер найден", classElement.isDisplayed()); */
     }
     @AfterEach
     public void teardown() {
